@@ -20,7 +20,7 @@ function BestStories() {
         <>
         <div className='selectcontainer'>
         <div>
-          <label for="country">Country:</label>
+          <label htmlFor="country">Country:</label>
         <select id="country" value={country} onChange={e => setCountry(e.target.value)} >
             <option value="us">United States</option>
             <option value="rs">Serbia</option>
@@ -41,7 +41,7 @@ function BestStories() {
         </div>
 
         <div>
-        <label for="category">Category: </label>
+        <label htmlFor="category">Category: </label>
         <select id="category" value={category} onChange={e => setCategory(e.target.value)} >
             <option value="general">General</option>
             <option value="business">Bussiness</option>
