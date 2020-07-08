@@ -6,7 +6,7 @@ function BestStories() {
     const [country, setCountry] = useState('us')
     const [category, setCategory] = useState('general')
     useEffect(() => {
-        fetch(`http://newsapi.org/v2/top-headlines?country=${country}&category=${category}&pageSize=100&apiKey=96856bfaa1f84df08dd045a49a76f737`)
+        fetch(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&pageSize=100&apiKey=96856bfaa1f84df08dd045a49a76f737`)
         .then(res => res.json())
         .then(result => setStories(result.articles))
         .catch(err => {
